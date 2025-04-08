@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 
 from django.core.management.base import BaseCommand
 from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
-from bson import ObjectId
+from pymongo import ObjectId
 from datetime import timedelta
 
 class Command(BaseCommand):
