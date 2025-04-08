@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-w!gddzu(5m7nq6l&sckd@wb4d+m7_c^iqu$4d%xbi9mj2-(me@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev', 'localhost']
 
 
 # Application definition
@@ -42,8 +42,6 @@ INSTALLED_APPS = [
     "corsheaders",
     "octofit_tracker",
 ]
-
-INSTALLED_APPS += ["octofit_tracker"]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
